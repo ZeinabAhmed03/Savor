@@ -11,20 +11,11 @@ class SearchTextField extends StatelessWidget {
       onTap: onTap,
       decoration: InputDecoration(
         hintText: 'Search a Meal...',
-        hintStyle: TextStyle(
-          fontSize: 12,
-          color: Color.fromARGB(255, 147, 113, 105),
-        ),
-        fillColor: Color(0xffF0EDE9),
+        hintStyle: TextStyle(fontSize: 12, color: Color(0xFF937169)),
+        fillColor: AppColors.containersBackgroundColor,
         filled: true,
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(color: Color(0xffF0EDE9)),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(color: Color(0xffF0EDE9)),
-        ),
+        border: outlineInputBorder(),
+        enabledBorder: outlineInputBorder(),
         focusedBorder: outlineInputBorder(),
         prefixIcon: Container(
           margin: EdgeInsets.all(10),
@@ -42,7 +33,7 @@ class SearchTextField extends StatelessWidget {
   OutlineInputBorder outlineInputBorder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(30),
-      borderSide: BorderSide(color: Color(0xffF0EDE9)),
+      borderSide: BorderSide(color: AppColors.containersBackgroundColor),
     );
   }
 }
