@@ -35,7 +35,7 @@ class ShowCategoryItem extends StatelessWidget {
   BoxDecoration boxDecoration() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(25),
-      color: const Color(0xFFFFFFFF),
+      color: Colors.white,
     );
   }
 }

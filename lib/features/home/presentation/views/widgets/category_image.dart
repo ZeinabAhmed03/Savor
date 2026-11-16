@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:savor/core/utils/app_assets.dart';
+import 'package:savor/core/utils/app_colors.dart';
 
 class CategoryImage extends StatelessWidget {
   const CategoryImage({super.key, this.imageUrl});
@@ -8,7 +9,7 @@ class CategoryImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Color(0xffF0EDE9)),
+      decoration: BoxDecoration(color: AppColors.containersBackgroundColor),
       height: 175,
       width: 200,
       child: imageUrl != null
