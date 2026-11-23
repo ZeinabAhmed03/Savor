@@ -4,7 +4,7 @@ import 'package:savor/features/home/presentation/views/widgets/category_image.da
 import 'package:savor/features/home/presentation/views/widgets/category_name.dart';
 
 class ShowCategoryItem extends StatelessWidget {
-  const ShowCategoryItem({super.key, this.category});
+  const ShowCategoryItem({super.key, required this.category});
   final Category? category;
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class ShowCategoryItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             CategoryImage(imageUrl: category?.strCategoryThumb),
-            CategoryName(category: category),
+            CategoryName(categoryName: category?.strCategory),
           ],
         ),
       ),

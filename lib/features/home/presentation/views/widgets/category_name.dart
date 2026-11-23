@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:savor/core/utils/app_assets.dart';
 import 'package:savor/core/utils/app_colors.dart';
-import 'package:savor/features/home/data/models/category_model/category.dart';
 
 class CategoryName extends StatelessWidget {
-  const CategoryName({super.key, required this.category});
+  const CategoryName({super.key, this.categoryName});
 
-  final Category? category;
-
+  final String? categoryName;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,7 +14,7 @@ class CategoryName extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            category?.strCategory ?? 'categoryName',
+            categoryName ?? 'categoryName',
             style: TextStyle(
               fontFamily: AppAssets.fontFamily,
               color: AppColors.goldColor,
